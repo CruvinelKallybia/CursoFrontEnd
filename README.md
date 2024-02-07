@@ -18,6 +18,7 @@
  ## Criar conta no GitHub
 
  ## Clonar o projeto   
+ git clone https:
 
  ## Commits
  Informação de alteração

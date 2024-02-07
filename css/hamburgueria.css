@@ -1,0 +1,163 @@
+/* Arquivo CSS geral com estilos dos elementos de todas as paginas */
+
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Optima, sans-serif;
+}
+
+body {
+	width: 100vw;
+    height: 100vh;
+	background-color: rgb(0, 0, 0);
+}
+header {
+	display: block;
+	position: relative;
+	background-image: url("../imagens/hamburguerwallpaper.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 370px;
+	border-radius: 10px;
+}
+.cabecalho-grid{
+	display: grid;
+	place-items: center;
+}
+.cabecalho {
+	display: block;
+	color: #F8F8FF;
+	-webkit-text-stroke-color: rgb(255, 72, 0);
+	-webkit-text-stroke-width: 2px;
+	padding: 3px 1%;
+	border: 3px 1%;
+	
+}
+
+.cabecalho h1 {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	top: 70px;
+
+}
+
+.cabecalho .city {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	top: 80px;
+
+}
+
+section {
+	display: block;
+	position: relative;
+	padding: 30px 4%;
+	top: 40px;
+	color: white;
+	border-radius: 10px;
+	background-image: url(../imagens/background-hamburgueria.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container-grid{
+	display: grid;
+	place-items: center;
+}
+.container{
+	position: relative;
+	border: 5px solid black;
+	background-color: rgba(61, 58, 58, 0.685);
+	border-radius: 30px;
+	margin-bottom: 30px;
+}
+.container:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 8px white;
+}
+.category-grid{
+	display: grid;
+	place-items: center;
+}
+.category {
+	display:block;
+	position: relative;
+	font-size: 40px;
+	text-align: center;
+	bottom: 5px;
+}
+
+.dataname {
+	display: block;
+	position: relative;
+	width: 175px;
+	top: 30px;
+	left: 90px;
+	font-size: 20px;
+
+}
+
+img {
+	display: block;
+	position: relative;
+	padding: 2px 4%;
+	top: 10px;
+	
+}
+
+.productcontent {
+	display: block;
+	position: relative;
+	text-align: center;
+	top: 120px;
+
+}
+
+.dataprice {
+	display: block;
+	position: relative;
+	float:inline-end;
+	background-color: rgb(255, 254, 254);
+	border-radius: 50%;
+	bottom: 30px;
+	padding: 5px 4%;
+	right: 10px;
+	color: red;	
+}
+
+.rodape {
+	display: block;
+	position: relative;
+	text-align:center;
+	top: 40px;
+	background-color: black;
+	color: rgba(255, 255, 255, 1.0);
+}
+@media only screen and (max-width: 920px) {
+	section .category h2{
+		font-size: 30px;
+	}
+	.container{
+		top: 10px;
+	}
+	img {
+		width: 150px;
+		height: 150px;
+		right: 12px;
+	}
+	.productcontent {
+		top: 50px;
+		left: 55px;
+		font-size: 15px;
+	}
+}

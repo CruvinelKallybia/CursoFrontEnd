@@ -1,0 +1,419 @@
+/*estilo geral*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+h2.title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+h2.title span{
+    color: orangered;
+    font-size: 30px;
+
+}
+button:hover, form .bottonenviar input:hover
+{
+    box-shadow: 0px 0px 8px white;
+    transform: scale(1.05);
+}
+.kallysocial i{
+    color: orangered;
+    font-size: 20px;
+
+}
+/* estilo cabeçalho */
+header{
+    padding: 40px 4%;
+}
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(112, 110, 110);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header nav.menudesktop a:hover{
+    color: #fff;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav.menudesktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+header .devcontato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* estilo do menu mobile */
+.abrirmenu i{
+    color: blue;
+    font-size: 45px;
+    padding: 15px 4%;
+    font-weight: 700;
+}
+.menumobile{
+    background-color: #000000;
+    height: 60vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 0%;
+    overflow: hidden;
+}
+.menumobile nav ul{
+    text-align: right;
+}
+.menumobile nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+.botaofechar{
+    padding: 20px 5%;
+}
+.menumobile.botaofechar i{
+    color: orangered;
+    font-size: 40px;
+} 
+.menumobile nav ul li a:hover{
+    background-color: blue ;
+    color: orangered ;
+}
+
+.overlaymenu{
+    background-color: #0000006e;
+    width: 100%;
+    height: 70%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* fim */
+/* estilo topo do site */
+section .topodosite{
+    padding: 40px 4%;
+}
+section.topodosite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topodosite .txt-topo-site h1{
+    color: orangered;
+    font-size: 45px;
+    line-height: 1;
+}
+.topodosite .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+    font-size: 20px;
+}
+.topodosite .img-topo-site img{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+    width: 15rem;
+}
+@keyframes float {
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* ESTILO ESPECIALIDADES */
+section .especialidades{
+    padding:40px 4%;
+}
+section .especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidadesbox{
+    color: white;
+    padding: 40px;
+    margin-top: 35px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.especialidades .especialidadesbox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+}
+.especialidades .especialidadesbox i{
+    font-size: 30px;
+}
+.especialidades .especialidadesbox h3{
+    font: 20px;
+    margin: 15px 0;
+}
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 80px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+section.sobre .imgsobre img{
+    border-radius: 50px;
+}
+.sobre .txtsobre{
+    color: white;
+}
+.sobre .txtsobre h2{
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.sobre .txtsobre h2 span{
+    color: orangered;
+    display: block;
+}
+.sobre .txtsobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.kallysocial button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: blue;
+    
+    margin: 0 5px;
+    transition: .2s;
+}
+/* estilo da sessão portifólio */
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1c;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff1c;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+/* INICIO FORMULÁRIO */
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(54, 46, 46, 0.733);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+}
+form input::placeholder{
+
+}
+form textarea{
+    resize: none;
+    max-height: 180px;
+}
+form .bottonenviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .bottonenviar input{
+    width: 100px;
+    background-color: blue;
+    color: orangered;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .2s;
+}
+
+/* estilo footer */
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1c;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .logofooter{
+    padding: 20px 2%;
+}
+footer .kallysocial i{
+    color: orangered;
+    font-size: 20px;
+}
+footer .linefooter{
+    padding: 20px 0;
+}
+.borda{
+    border-top: 2px solid orangered;
+}
+footer .linefooter p i{
+    color:rgb(255, 60, 0);
+    font-size: 20px;
+}
+footer .linefooter p a{
+    color: blue;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 920px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+    .topodosite .flex{
+        flex-direction: column-reverse;
+    } 
+    .kallysocial {
+        text-align: center;
+    }
+    /* cabeçalho */
+    .menudesktop, .devcontato{
+        display: none;
+    }
+    header{
+        padding: 10px 10%;
+    }
+    /* topo do site */
+    section.topodosite{
+        padding: 10px 10%;
+    }
+    section.topodosite .flex{
+        gap: 40px;
+    }
+    .topodosite .txt-topo-site h1{
+        font-size: 23px;
+        line-height: 1;
+    }
+    .topodosite .txt-topo-site p{
+        font-size: 15px;
+    }
+    .topodosite .img-topo-site img{
+        width: 100%;
+    }
+    /* especialidades */
+    section.especialidades{
+        padding: 10px 10%;
+    }
+    /* SOBRE */
+    section.sobre{
+        padding: 25px 10%;
+    }
+    section.sobre .imgsobre img{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .sobre .txtsobre h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .sobre .txtsobre{
+        font-size: 15px;
+    }
+
+    /* portifólio */
+    section.portifolio{
+        padding: 30px 3%; 
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portifolio .flex{
+        gap: 50px;
+    }
+    /* formulário */
+    section.formulario{
+        padding: 25px 10%;
+    }
+    /* rodapé */
+    footer{
+        padding: 10px 10%;
+    }
+    .logofooter{
+        text-align: center;
+    }
+    .linefooter p{
+        text-align: center;
+    }
+    .borda{
+        margin-top: 15px;
+    }
+}
